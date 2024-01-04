@@ -37,3 +37,12 @@ body {
 a {
   text-decoration: none;
 }
+
+.footer {
+  position: relative;
+  margin-top: auto; /* Push the footer to the bottom */
+  background-color: #333; /* Customize the background color */
+  color: white; /* Customize the text color */
+  padding: 10px; /* Add padding as needed */
+  text-align: center; /* Center the content horizontally */
+}

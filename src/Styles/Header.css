@@ -1,5 +1,6 @@
 header {
   width: 100%;
+  
 }
 
 header .header-flex {
@@ -36,7 +37,7 @@ header .header-image {
 }
 
 header .header-image .header-image-inner {
-  position: absolute;
+  position: relative;
   overflow: hidden;
 }
 

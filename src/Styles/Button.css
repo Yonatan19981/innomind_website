@@ -45,3 +45,29 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.Special-button {
+  width: 220px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 163.636px;
+  background: #3772FF;
+  color: #FFF;
+  font-family: Assistant;
+  font-size: 25.455px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29.091px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 5px 12px;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.Special-button:hover {
+  background: #FFF;
+  color: #3772FF;
+}
+

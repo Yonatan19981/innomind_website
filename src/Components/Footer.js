@@ -7,7 +7,7 @@ import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <div className="footer-col">
           <div className="footer-logo-flex">
             <img src={logo} alt="Logo" />
@@ -48,9 +48,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="copyright">
-        <small>Copyright © 2022 Metapass, Inc. All rights reserved.</small>
+        <small>Design by noa meiri</small>
       </div>
     </footer>
   );

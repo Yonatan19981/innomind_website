@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import logo from "../Assets/metapass transparent.png";
+import logo from "../Assets/InnomindLogoText.svg";
+import contactButton from "../Assets/ContactUsNavbarButton.svg";
 import "../Styles/Navbar.css";
 import GradientButton from "./GradientButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +10,22 @@ import "aos/dist/aos.css";
 
 const MenuItems = [
   {
-    title: "Join Community",
+    title: "Home",
+    url: "/Home",
+    cName: "nav-link",
+  },
+  {
+    title: "About us",
+    url: "/Home",
+    cName: "nav-link",
+  },
+  {
+    title: "Projects",
+    url: "/Home",
+    cName: "nav-link",
+  },
+  {
+    title: "Research",
     url: "/Home",
     cName: "nav-link",
   },
@@ -47,7 +63,7 @@ const Navbar = () => {
           );
         })}
         <li>
-          <GradientButton>Launch App</GradientButton>
+        <img className="contact-us-navbar" src={contactButton} alt="contactButton" />
         </li>
       </ul>
     </nav>

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 import "../Styles/Header.css";
-import GradientButton from "./GradientButton";
-import headerimage from "../Assets/ticketsskew.png";
+import SpecialButton from "./SpecialButton";
+import headerimage from "../Assets/MainHeaderImage.svg";
 import polygon from "../Assets/polygon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -48,6 +48,7 @@ const Header = () => {
     AOS.refresh();
   });
 
+
   return (
     <header data-aos="fade-up" ref={(el) => (app = el)}>
       <div className="header-flex">
@@ -55,22 +56,20 @@ const Header = () => {
           <div className="header-content-inner" ref={(el) => (content = el)}>
             <h1>
               <div className="hero-content-line">
-                <div className="hero-content-line-inner">Tokenize your</div>
+                <div className="hero-content-line-inner">The future of</div>
               </div>
               <div className="hero-content-line">
                 <div className="hero-content-line-inner">
-                  ticketing experience.
+                mental health is here.
                 </div>
               </div>
             </h1>
             <p>
-              Metapass allows you to create events on Polygon and sell NFT
-              tickets so you can token gate your event and also server proof of
-              attendance.
+            In this lab, we create innovative solutions for better mental health diagnosis, treatment and monitoring.
             </p>
             <br />
             <div className="btn-row">
-              <GradientButton>Mint now</GradientButton>
+              <SpecialButton>Contact us</SpecialButton>
             </div>
           </div>
         </div>
@@ -80,13 +79,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="backed">
-        <h1>Backed By</h1>
-        <div className="backed-flex">
-          <img src={polygon} alt="polygon" />
-          <span>&nbsp;Polygon</span>
-        </div>
-      </div>
+     
     </header>
   );
 };
