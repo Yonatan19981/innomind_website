@@ -111,6 +111,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px; /* Increased distance between elements */
+
 }
 
 .pricing .pricing-box ul {
@@ -132,6 +134,8 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin-top: 20px; /* Increased distance between elements */
+
 }
 
 .community {

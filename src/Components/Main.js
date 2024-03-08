@@ -64,6 +64,7 @@ const Main = () => {
           <h1>Pricing</h1>
           <p>Completely free for creators</p>
           <br />
+          <div className="methods-flex">
           <div className="pricing-box">
             <h1>Free</h1>
             <div className="price-flex">
@@ -80,6 +81,62 @@ const Main = () => {
                 Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
               </a>
             </GradientButton>
+            
+          </div>
+          <div className="pricing-box">
+            <h1>Free</h1>
+            <div className="price-flex">
+              <h2>$0</h2>
+              <span>/month</span>
+            </div>
+            <ul>
+              <li>Make Unlimited events</li>
+              <li>No limit on tickets</li>
+              <li>No commission</li>
+            </ul>
+            <GradientButton>
+              <a href="/">
+                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
+            </GradientButton>
+            
+          </div>
+          <div className="pricing-box">
+            <h1>Free</h1>
+            <div className="price-flex">
+              <h2>$0</h2>
+              <span>/month</span>
+            </div>
+            <ul>
+              <li>Make Unlimited events</li>
+              <li>No limit on tickets</li>
+              <li>No commission</li>
+            </ul>
+            <GradientButton>
+              <a href="/">
+                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
+            </GradientButton>
+            
+          </div>
+          <div className="pricing-box">
+            <h1>Free</h1>
+            <div className="price-flex">
+              <h2>$0</h2>
+              <span>/month</span>
+            </div>
+            <ul>
+              <li>Make Unlimited events</li>
+              <li>No limit on tickets</li>
+              <li>No commission</li>
+            </ul>
+            <GradientButton>
+              <a href="/">
+                Create an event&nbsp; <FontAwesomeIcon icon={faArrowRight} />{" "}
+              </a>
+            </GradientButton>
+            
+          </div>
           </div>
         </div>
         <div className="community" data-aos="fade-up">
