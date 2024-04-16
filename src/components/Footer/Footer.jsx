@@ -16,7 +16,8 @@ export default function Footer(){
             <div className={'w-full h-[200px] bg-[#07215B]'}>
                 {/* Your footer content */}
                 <div className="text-center text-white py-4">
-                    Images by <a href="www.freepik.com" className="underline">freepik</a>
+                    Images by <a target='_blank'
+            rel='noopener noreferrer' href="https://freepik.com" className="underline">freepik</a>
                 </div>
                 <div className="text-center text-white py-4">
                    Design by <a href="" className="">Noa Meiri</a>
