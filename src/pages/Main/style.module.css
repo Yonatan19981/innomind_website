@@ -1,0 +1,106 @@
+.welcome {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    @apply  text-[26px] tracking-[1px] text-[#AD72FF];
+}
+
+.future {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[48px] tracking-[2px] leading-[58.5px];
+}
+
+.description {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    @apply text-[30px] tracking-[1px] leading-[37px];
+}
+
+.mission {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[20px] text-[#458FF6];
+}
+.mental {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[32px] leading-[41px] tracking-[1px];
+}
+
+.support {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[28px] tracking-[0.5px] leading-[40px];
+}
+
+.partner {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply text-[32px] tracking-[2px] max-[1200px]:tracking-[1px] ;
+}
+
+.button {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply w-44 h-14 bg-[#7D67FF] flex justify-center items-center text-[25px] text-white rounded-full cursor-pointer;
+}
+
+.people_name {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply text-[32px] tracking-[0.5px] ;
+}
+
+.role {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[32px] tracking-[2px] ;
+}
+
+.image_wrapper {
+    box-shadow: 4px 5px 4px 0px #97C3F9;
+    @apply w-[170px] h-[170px] rounded-full flex justify-center items-center relative overflow-hidden;
+}
+
+.read_more_button {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[20px] text-[#458FF6]  hover:bg-[#458FF6] hover:text-white duration-300 cursor-pointer leading-[26px] translate-y-10 flex items-center justify-center w-64 h-14 rounded-full border-2 border-[#458FF6] self-center;
+}
+
+.amazing {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply text-[40px]  ;
+}
+
+.button2 {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply w-44 h-14 bg-[#370D7A] flex justify-center items-center text-[25px] text-white rounded-full cursor-pointer;
+}

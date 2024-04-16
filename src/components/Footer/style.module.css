@@ -1,0 +1,23 @@
+
+.logo_text {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    @apply  text-[27px] tracking-[1px];
+}
+
+.nav_links {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply text-[16px] gap-12 flex flex-row items-center gap-12 hover:text-[#2B3BCC] duration-300;
+}
+
+.button {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply w-32 h-9 bg-[#0F62FE] flex justify-center items-center text-white;
+}

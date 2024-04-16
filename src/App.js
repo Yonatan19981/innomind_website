@@ -1,17 +1,22 @@
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
-import Projects from "./Components/Projects";
+import './App.css';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import {Route, Routes} from "react-router-dom";
+import Main from "./pages/Main/Main";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import OurProjects from "./pages/OurProjects/OurProjects";
+import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Projects/>
-      {/* <Main /> */}
-      <Footer className="footer"/>
+      <Header/>
+        <Routes>
+            <Route path={'/'} element={<Main/>}/>
+            <Route path={'/about_us'} element={<AboutUs/>}/>
+            <Route path={'/projects'} element={<OurProjects/>}/>
+            <Route path={'/contact'} element={<Contact/>}/>
+        </Routes>
+        <Footer/>
     </div>
   );
 }

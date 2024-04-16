@@ -1,0 +1,23 @@
+
+.title {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[24px];
+}
+
+.description {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    @apply text-[17px] leading-[26px] text-white mt-2 line-clamp-[7];
+}
+.contact {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    @apply text-[16px] leading-[26px] text-white mt-2 flex items-center justify-center w-28 h-9 rounded-full bg-[#370D7A] self-end;
+}

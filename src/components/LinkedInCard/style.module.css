@@ -1,0 +1,20 @@
+.image_wrapper {
+    box-shadow: 4px 5px 4px 0px #97C3F9;
+    @apply max-[500px]:w-[120px] max-[500px]:h-[120px] w-[170px] h-[170px] rounded-full bg-gray-100 flex justify-center items-center relative overflow-hidden;
+}
+
+.people_name {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply text-[32px] tracking-[0.5px] ;
+}
+
+.role {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[32px] tracking-[2px] ;
+}

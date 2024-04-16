@@ -1,0 +1,15 @@
+.review {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[24px] text-[#4B4D4F] leading-[25px];
+}
+
+.author {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[17px] text-[#4B4D4F] leading-[25px];
+}

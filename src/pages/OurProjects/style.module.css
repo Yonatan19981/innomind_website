@@ -1,0 +1,60 @@
+.enter_layer {
+    background: linear-gradient(255.4deg, rgba(121, 133, 243, 0.36) 20.58%, rgba(5, 0, 255, 0.36) 69.96%);
+    @apply w-full h-[630px] px-20 max-[800px]:px-10 text-start flex flex-col items-start justify-center text-white;
+}
+
+.entrance_title {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply  text-[60px] tracking-[2px] max-[1200px]:text-[40px];
+}
+
+.entrance_description {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[28px] max-[1200px]:text-[22px] max-[1000px]:text-[15px] max-[1000px]:leading-[24px] max-[1000px]:tracking-[1px] leading-[40px] tracking-[2px] max-[1200px]:w-auto max-w-[800px] text-start;
+}
+
+.button {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply w-56 h-14 bg-[#242189] flex justify-center items-center text-[25px] text-white rounded-full cursor-pointer mt-6;
+}
+
+.card_title {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    @apply text-[36px] max-[1000px]:text-[30px] ;
+}
+
+.card_description {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[21px] leading-[34px] text-[#7D7987];
+}
+
+.footer_description {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    @apply text-[21px] leading-[29px] ;
+}
+
+.button2 {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    @apply w-44 h-14 bg-[#3772FF] flex justify-center items-center text-[25px] text-white rounded-full cursor-pointer;
+}
