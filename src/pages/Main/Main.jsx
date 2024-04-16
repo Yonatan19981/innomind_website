@@ -178,7 +178,7 @@ export default function Main() {
                     </div>
 
                     <div className={`${style.partner} mt-10 mb-6 `}>You could be our next partner for great projects </div>
-                    <div className={style.button}>Contact us</div>
+                    <Link to={"/contact"}  className={style.button}>Contact us</Link>
 
                 </div>
 
