@@ -94,7 +94,11 @@ export default function AboutUs() {
 
                             <div className={style.card_name}>Ms. Noa Baruch</div>
                             <div className={'w-24 h-2 rounded-full bg-[#4089ED] my-4'}></div>
-                            <p className={`${style.card_description} mt-4`}></p>
+                            <p className={`${style.card_description} mt-4`}>
+
+                            B.A Psychology<br/><br/>
+                            MA student Organizational & Occupational Psychology<br/><br/>
+                            </p>
 
                             {/*<span className={style.card_link}>Raz.Gross@sheba.health.gov.il</span>*/}
 
