@@ -15,8 +15,8 @@ import placeholder from "../../assets/img/people/placeholder_woman.png";
 import noa_baruch from "../../assets/img/people/noa_baruch.png";
 import nadav from "../../assets/img/people/nadav.png";
 import raz from "../../assets/img/people/raz.png";
-import sheba from "../../assets/img/logo/sheba.png";
-
+import sharon from "../../assets/img/people/sharon.png";
+import maayan from "../../assets/img/people/maayan.png";
 import ReadMoreCard from "../../components/ReadMoreCard/ReadMoreCard";
 import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
 import PartnersSwiper from "../../components/PartnersSwiper/PartnersSwiper";
@@ -68,13 +68,13 @@ export default function Main() {
             linkedin_url: "#"
         },
         {
-            image: placeholder,
+            image: sharon,
             name: "Ms. Sharon Baltansky",
             role: "Research Assistnt",
             linkedin_url: "#"
         },
         {
-            image: placeholder,
+            image: maayan,
             name: "Ms. Maayan Nur",
             role: "Research Assistent",
             linkedin_url: "#"

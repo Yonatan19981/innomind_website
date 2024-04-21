@@ -2,9 +2,11 @@ import React from "react";
 import style from "./style.module.css";
 import noa from "../../assets/img/people/noa_baruch.png";
 import nadav from "../../assets/img/people/nadav.png";
+import sharon from "../../assets/img/people/sharon.png";
+import maayan from "../../assets/img/people/maayan.png";
+
 import raz from "../../assets/img/people/raz.png";
 import collab from "../../assets/img/layer/collab.png";
-import sheba from "../../assets/img/logo/sheba.png";
 import placeholder from "../../assets/img/people/placeholder_woman.png";
 import {Link} from "react-router-dom";
 
@@ -114,7 +116,7 @@ export default function AboutUs() {
 
                         <div className={'w-48 h-48 max-[1200px]:w-36 max-[1200px]:h-36 overflow-hidden rounded-full '}>
 
-                            <img className={'w-full h-full object-cover '} src={placeholder} alt={'innomind'}/>
+                            <img className={'w-full h-full object-cover '} src={sharon} alt={'innomind'}/>
 
                         </div>
 
@@ -141,7 +143,7 @@ export default function AboutUs() {
 
                         <div className={'w-48 h-48 max-[1200px]:w-36 max-[1200px]:h-36 overflow-hidden rounded-full '}>
 
-                            <img className={'w-full h-full object-cover '} src={placeholder} alt={'innomind'}/>
+                            <img className={'w-full h-full object-cover '} src={maayan} alt={'innomind'}/>
 
                         </div>
 
