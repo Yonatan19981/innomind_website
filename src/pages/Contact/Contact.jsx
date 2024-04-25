@@ -66,9 +66,9 @@ export default function Contact() {
                         <span className={style.description}>We are located inside the psychiatry building in sheba hospital.</span>
                         <br></br>
 
-                        <span className={style.description}>Email:</span>
+                        <span className={style.description}>Email:labinnomind@gmail.com</span>
                         <br></br>
-                        <span className={style.description}>Phone:</span>
+                        <span className={style.description}>Phone:+972 52-828-3227</span>
                     </div>
 
                     <div className={' max-[1000px]:w-[250px] w-1/2 h-auto flex flex-col items-center justify-center'}>
@@ -78,7 +78,6 @@ export default function Contact() {
                     </div>
 
                 </div>
-
            
             </div>
 

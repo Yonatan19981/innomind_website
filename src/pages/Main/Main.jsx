@@ -11,6 +11,8 @@ import ARC from "../../assets/img/partners/sheba.png";
 import health from "../../assets/img/partners/health.png";
 import rafael from "../../assets/img/partners/rafael.png";
 import technion from "../../assets/img/partners/technion.png";
+import baar_yaacov from "../../assets/img/partners/baar_yaacov.png";
+import code_for_israel from "../../assets/img/partners/code_for_israel.png";
 import placeholder from "../../assets/img/people/placeholder_woman.png";
 import noa_baruch from "../../assets/img/people/noa_baruch.png";
 import nadav from "../../assets/img/people/nadav.png";
@@ -174,6 +176,8 @@ export default function Main() {
                         <img className={'object-contain h-40 max-[1000px]:h-20'} src={health} alt={'innomind'}/>
                         <img className={'object-contain h-24 max-[1000px]:h-12 '} src={rafael} alt={'innomind'}/>
                         <img className={'object-contain h-24 max-[1000px]:h-12 '} src={technion} alt={'innomind'}/>
+                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={baar_yaacov} alt={'innomind'}/>
+                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={code_for_israel} alt={'innomind'}/>
 
                     </div>
 
