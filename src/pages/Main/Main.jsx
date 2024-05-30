@@ -24,6 +24,12 @@ import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
 import PartnersSwiper from "../../components/PartnersSwiper/PartnersSwiper";
 import LinkedInCard from "../../components/LinkedInCard/LinkedInCard";
 import {Link} from "react-router-dom";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import {Navigation, Pagination} from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCard from "../../components/PartnersSwiper/components/SwiperCard/SwiperCard";
+import {GrNext, GrPrevious} from "react-icons/gr";
 
 export default function Main() {
 
@@ -72,18 +78,42 @@ export default function Main() {
         {
             image: sharon,
             name: "Ms. Sharon Baltansky",
-            role: "Research Assistnt",
+            role: "Research Assistant",
             linkedin_url: "#"
         },
         {
             image: maayan,
             name: "Ms. Maayan Nur",
-            role: "Research Assistent",
+            role: "Research Assistant",
             linkedin_url: "#"
         },
         
     ]
-
+   
+    const PARTNERS = [
+        {
+            img:ARC
+           
+        },
+        {
+            img:baar_yaacov
+           
+        },
+        {
+            img:code_for_israel
+           
+        },
+        {
+            img:health
+           
+        },
+        {
+            img:rafael
+        },
+        {
+            img:technion
+        },
+    ]
     return<>
         <div className={'w-full h-auto min-h-screen bg-white flex flex-col items-center pt-20 overflow-x-clip'}>
 
@@ -170,14 +200,61 @@ export default function Main() {
 
                     <span className={style.mental}>Working with the best</span>
 
-                    <div className={'flex flex-row items-center justify-center mt-12  max-[1200px]:gap-0 gap-20 '}>
+                    <div className={'w-full h-[300px] flex flex-col items-center justify-end relative'}>
 
-                        <img className={'object-contain h-40 max-[1000px]:h-20'} src={ARC} alt={'innomind'}/>
-                        <img className={'object-contain h-40 max-[1000px]:h-20'} src={health} alt={'innomind'}/>
-                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={rafael} alt={'innomind'}/>
-                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={technion} alt={'innomind'}/>
-                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={baar_yaacov} alt={'innomind'}/>
-                        <img className={'object-contain h-24 max-[1000px]:h-12 '} src={code_for_israel} alt={'innomind'}/>
+<div className={'prev absolute max-[500px]:-left-0 -left-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrPrevious /></div>
+<div className={'next absolute max-[500px]:-right-0 -right-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrNext /></div>
+
+{/* <Swiper
+    slidesPerView={3}
+    spaceBetween={30}
+    loop={true}
+    pagination={{
+        clickable: false,
+    }}
+    freeMode={true}
+    // grabCursor={true}
+    centeredSlides={true}
+    modules={[Pagination,Navigation]}
+    navigation={{
+        nextEl: ".next",
+        prevEl: ".prev",
+        disabledClass: "swiper-button-disabled"
+    }}
+    breakpoints={{
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        1: {
+            slidesPerView:1 ,
+            spaceBetween:10
+        }
+    }}
+    className="w-full h-full flex items-end "
+>
+    {PARTNERS.map((value, index)=> <SwiperSlide className={'w-[314px] h-[300px]'}>
+        <div className={'w-full h-full flex items-end justify-center'}>
+            <SwiperCard author={value.img} review={value.img} img={value.img}/>
+        </div>
+    </SwiperSlide>)}
+
+</Swiper> */}
+
+</div>
+
+                    <div className={'flex flex-row items-center justify-center mt-12  gap-0 gap-20 '}>
+{/* 
+                        <img className={'object-contain h-40'} src={ARC} alt={'innomind'}/>
+                        <img className={'object-contain h-40'} src={health} alt={'innomind'}/>
+                        <img className={'object-contain h-40'} src={rafael} alt={'innomind'}/>
+                        <img className={'object-contain h-40'} src={technion} alt={'innomind'}/>
+                        <img className={'object-contain h-40'} src={baar_yaacov} alt={'innomind'}/>
+                        <img className={'object-contain h-40'} src={code_for_israel} alt={'innomind'}/> */}
 
                     </div>
 

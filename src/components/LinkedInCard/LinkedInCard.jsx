@@ -17,7 +17,7 @@ export default function LinkedInCard({index,image,name,role,linkedin_url}) {
             <div className={`${style.role} mt-4`}>{role}</div>
 
             <a href={linkedin_url} className={'mt-4'} >
-                <img className={'w-[30px] h-[30px] object-contain'} src={linkedin} alt={`innomind linkedin`}/>
+                <img className={'w-10 h-10 object-contain'} src={linkedin} alt={`innomind linkedin`}/>
             </a>
 
         </div>

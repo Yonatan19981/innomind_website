@@ -16,7 +16,7 @@ import noa_baruch from "../../assets/img/people/noa_baruch.png";
 import nadav from "../../assets/img/people/nadav.png";
 import raz from "../../assets/img/people/raz.png";
 import sheba from "../../assets/img/logo/sheba.png";
-import map from "../../assets/img/layer/newmap.png";
+import map from "../../assets/img/layer/map_logo.png";
 import ReadMoreCard from "../../components/ReadMoreCard/ReadMoreCard";
 import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
 import PartnersSwiper from "../../components/PartnersSwiper/PartnersSwiper";

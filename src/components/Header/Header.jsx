@@ -23,10 +23,10 @@ export default function Header(){
             title: "Projects",
             to : '/projects'
         },
-        {
-            title: "Contact",
-            to : '/contact'
-        },
+        // {
+        //     title: "Contact",
+        //     to : '/contact'
+        // },
         
     ]
 
