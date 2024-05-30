@@ -11,6 +11,7 @@ export default function ContactUsCard({title,description,to}) {
             <div className={style.title}>{title}</div>
             <div className={style.description}>{description}</div>
             <Link to={"/contact"} className={style.contact}><div>Contact us</div> </Link>
+            
         </div>
     </>
 }

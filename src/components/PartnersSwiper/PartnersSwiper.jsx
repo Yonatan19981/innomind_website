@@ -1,7 +1,12 @@
 import React from "react";
 
 import placeholder_man from "../../assets/img/people/placeholder_man.png";
-
+import ARC from "../../assets/img/partners/sheba.png";
+import health from "../../assets/img/partners/health.png";
+import rafael from "../../assets/img/partners/rafael.png";
+import technion from "../../assets/img/partners/technion.png";
+import baar_yaacov from "../../assets/img/partners/baar_yaacov.png";
+import code_for_israel from "../../assets/img/partners/code_for_israel.png";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -12,35 +17,42 @@ import {GrNext, GrPrevious} from "react-icons/gr";
 
 export default function PartnersSwiper() {
 
-
-    const REVIEWS = [
+    const PARTNERS = [
         {
-            img:placeholder_man,
-            quote: 'Collaborating with INNOMIND was great. Collaborating with INNOMIND was great.',
-            author: "Avi Cohen, Haifa University"
+            img:ARC
+           
         },
         {
-            img:placeholder_man,
-            quote: 'Collaborating with INNOMIND was great. Collaborating with INNOMIND was great.',
-            author: "Avi Cohen, Haifa University"
+            img:baar_yaacov
+           
         },
         {
-            img:placeholder_man,
-            quote: 'Collaborating with INNOMIND was great. Collaborating with INNOMIND was great.',
-            author: "Avi Cohen, Haifa University"
+            img:code_for_israel
+           
         },
         {
-            img:placeholder_man,
-            quote: 'Collaborating with INNOMIND was great. Collaborating with INNOMIND was great.',
-            author: "Avi Cohen, Haifa University"
+            img:health
+           
+        },
+        {
+            img:rafael
+        },
+        {
+            img:technion
         },
     ]
 
     return<>
-        <div className={'w-full h-[300px] flex flex-col items-center justify-end relative'}>
+        <div className={'w-full h-[310px]flex flex-col items-center justify-end relative'}>
+        <div className="relative w-full">
+  <div className="prev absolute left-0 m-auto top-1/2 transform -translate-y-1/2 text-black/60 text-3xl z-10 select-none">
+    <GrPrevious />
+  </div>
+  <div className="next absolute right-0 m-auto top-1/2 transform -translate-y-1/2 text-black/60 text-3xl z-10 select-none">
+    <GrNext />
+  </div>
+</div>
 
-            <div className={'prev absolute max-[500px]:-left-0 -left-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrPrevious /></div>
-            <div className={'next absolute max-[500px]:-right-0 -right-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrNext /></div>
 
             <Swiper
                 slidesPerView={3}
@@ -72,11 +84,13 @@ export default function PartnersSwiper() {
                         spaceBetween:10
                     }
                 }}
-                className="w-full h-full flex items-end "
+                className="h-full flex items-end "
             >
-                {REVIEWS.map((value, index)=> <SwiperSlide className={'w-[314px] h-[300px]'}>
+
+
+                {PARTNERS.map((value, index)=> <SwiperSlide className={'w-[314px] h-[300px]'}>
                     <div className={'w-full h-full flex items-end justify-center'}>
-                        <SwiperCard author={value.author} review={value.quote} img={value.img}/>
+                        <SwiperCard  img={value.img}/>
                     </div>
                 </SwiperSlide>)}
 

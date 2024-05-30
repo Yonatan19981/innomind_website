@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./style.module.css";
 
-import entrance_layer from "../../assets/img/layer/entrance_layer.png";
+import entrance_layer from "../../assets/img/layer/entrance_layer_lottie.json";
+import entrance_layer_lottie from "../../assets/img/layer/entrance_layer.png";
 import neuro_layer from "../../assets/img/layer/neuron.png";
 import back_layer from "../../assets/img/layer/back_layer.png";
 import back_layer2 from "../../assets/img/layer/back_layer2.png";
@@ -19,17 +20,13 @@ import nadav from "../../assets/img/people/nadav.png";
 import raz from "../../assets/img/people/raz.png";
 import sharon from "../../assets/img/people/sharon.png";
 import maayan from "../../assets/img/people/maayan.png";
+import Lottie from "lottie-react";
 import ReadMoreCard from "../../components/ReadMoreCard/ReadMoreCard";
 import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
 import PartnersSwiper from "../../components/PartnersSwiper/PartnersSwiper";
 import LinkedInCard from "../../components/LinkedInCard/LinkedInCard";
 import {Link} from "react-router-dom";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import {Navigation, Pagination} from "swiper/modules";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCard from "../../components/PartnersSwiper/components/SwiperCard/SwiperCard";
-import {GrNext, GrPrevious} from "react-icons/gr";
+
 
 export default function Main() {
 
@@ -61,59 +58,36 @@ export default function Main() {
             image: raz,
             name: "Dr. Raz Gross",
             role: "CEO",
-            linkedin_url: "#"
+            linkedin_url: "https://www.linkedin.com/in/raz-gross-ba2524119/"
         },
         {
             image: nadav,
             name: "Dr. Nadav Goldental",
             role: "CEO",
-            linkedin_url: "#"
+            linkedin_url: "https://www.linkedin.com/in/nadav-goldental/"
         },
         {
             image: noa_baruch,
             name: "Ms. Noa Baruch",
             role: "Lab Manager",
-            linkedin_url: "#"
+            linkedin_url: " http://linkedin.com/in/noa-baruch-60671b19a"
         },
         {
             image: sharon,
             name: "Ms. Sharon Baltansky",
             role: "Research Assistant",
-            linkedin_url: "#"
+            linkedin_url: "http://www.linkedin.com/in/sharonbaltansky"
         },
         {
             image: maayan,
             name: "Ms. Maayan Nur",
             role: "Research Assistant",
-            linkedin_url: "#"
+            linkedin_url: "http://www.linkedin.com/in/maayan-nur"
         },
         
     ]
    
-    const PARTNERS = [
-        {
-            img:ARC
-           
-        },
-        {
-            img:baar_yaacov
-           
-        },
-        {
-            img:code_for_israel
-           
-        },
-        {
-            img:health
-           
-        },
-        {
-            img:rafael
-        },
-        {
-            img:technion
-        },
-    ]
+    
     return<>
         <div className={'w-full h-auto min-h-screen bg-white flex flex-col items-center pt-20 overflow-x-clip'}>
 
@@ -133,8 +107,7 @@ export default function Main() {
                     </div>
 
                     <div className={' max-[1000px]:w-[250px] w-1/2 h-auto flex flex-col items-center justify-center'}>
-
-                        <img className={'w-full h-fit max-h-[500px] object-contain'} src={entrance_layer} alt={'Innomind'}/>
+                    <Lottie className={'w-full h-fit max-h-[1000px] object-contain'} animationData={entrance_layer} loop={true} alt={'Innomind'} />
 
                     </div>
 
@@ -163,6 +136,7 @@ export default function Main() {
 
 
                 <div className={'w-full flex flex-col items-start text-start max-[1000px]:mt-8'}>
+           
 
                     <div className={style.mission}>Our projects</div>
                     <div className={style.mental}>Advancing psychiatry and mental health. </div>
@@ -196,69 +170,16 @@ export default function Main() {
                 <img className={'absolute right-4 top-0 max-h-[500px] max-[500px]:max-h-[150px] max-[1000px]:max-h-[300px] object-contain'} src={back_frame_layer_right} alt={'innomind'}/>
                 <img className={'absolute left-4 bottom-0 max-h-[500px] max-[500px]:max-h-[150px] max-[1000px]:max-h-[300px] object-contain'} src={back_frame_layer_left} alt={'innomind'}/>
 
-                <div className={'flex flex-col items-center max-[1000px]:px-12 z-10 '}>
+                <div className={'w-full max-[500px]:px-0.5 max-[1300px]:px-12 max-[1500px]:max-w-[1200px] max-[50000px]:max-w-[1500px] h-auto flex flex-col items-center '}>
 
                     <span className={style.mental}>Working with the best</span>
-
-                    <div className={'w-full h-[300px] flex flex-col items-center justify-end relative'}>
-
-<div className={'prev absolute max-[500px]:-left-0 -left-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrPrevious /></div>
-<div className={'next absolute max-[500px]:-right-0 -right-10 m-auto top-36 text-black/60 text-3xl z-10 select-none'}><GrNext /></div>
-
-{/* <Swiper
-    slidesPerView={3}
-    spaceBetween={30}
-    loop={true}
-    pagination={{
-        clickable: false,
-    }}
-    freeMode={true}
-    // grabCursor={true}
-    centeredSlides={true}
-    modules={[Pagination,Navigation]}
-    navigation={{
-        nextEl: ".next",
-        prevEl: ".prev",
-        disabledClass: "swiper-button-disabled"
-    }}
-    breakpoints={{
-        1000: {
-            slidesPerView: 3,
-            spaceBetween: 10
-        },
-        600: {
-            slidesPerView: 2,
-            spaceBetween: 10
-        },
-        1: {
-            slidesPerView:1 ,
-            spaceBetween:10
-        }
-    }}
-    className="w-full h-full flex items-end "
->
-    {PARTNERS.map((value, index)=> <SwiperSlide className={'w-[314px] h-[300px]'}>
-        <div className={'w-full h-full flex items-end justify-center'}>
-            <SwiperCard author={value.img} review={value.img} img={value.img}/>
-        </div>
-    </SwiperSlide>)}
-
-</Swiper> */}
-
-</div>
-
-                    <div className={'flex flex-row items-center justify-center mt-12  gap-0 gap-20 '}>
-{/* 
-                        <img className={'object-contain h-40'} src={ARC} alt={'innomind'}/>
-                        <img className={'object-contain h-40'} src={health} alt={'innomind'}/>
-                        <img className={'object-contain h-40'} src={rafael} alt={'innomind'}/>
-                        <img className={'object-contain h-40'} src={technion} alt={'innomind'}/>
-                        <img className={'object-contain h-40'} src={baar_yaacov} alt={'innomind'}/>
-                        <img className={'object-contain h-40'} src={code_for_israel} alt={'innomind'}/> */}
-
+                  
+                    <div className={'w-full max-w-[1100px] h-[310px] flex items-end self-center'}>
+                        <PartnersSwiper/>
                     </div>
 
-                    <div className={`${style.partner} mt-10 mb-6 `}>You could be our next partner for great projects </div>
+                    <div className={`${style.partner} w-fit mt-10 mb-6 `}>You could be our next partner for great projects </div>
+           
                     <Link to={"/contact"}  className={style.button}>Contact us</Link>
 
                 </div>
@@ -266,29 +187,30 @@ export default function Main() {
             </div>
 
             <div className={'w-full max-[500px]:px-0.5 max-[1300px]:px-12 max-[1500px]:max-w-[1200px] max-[50000px]:max-w-[1500px] h-auto flex flex-col items-center '}>
-
-                <div className={'w-full h-[750px] max-[500px]:h-auto max-[500px]:mt-10 relative flex flex-col items-start justify-center'}>
+         
+                <div className={'w-full max-[500px]:h-auto max-[500px]:mt-10 relative flex flex-col items-start justify-center'}>
 
                     <div className={style.mission}>Our team</div>
                     <div className={style.mental}>It’s all about the people.</div>
 
-                    <div className={'w-full flex flex-col items-center  mt-20'}>
-
-                        <div className={'flex flex-row max-[500px]:flex-col max-[500px]:items-center items-start justify-center gap-10'}>
-
-                            {People.map((value, index)=> <LinkedInCard
+                    <div className="w-full flex flex-col items-center mt-20">
+                     <div className="flex flex-row flex-wrap max-[500px]:flex-col max-[500px]:items-center items-start justify-center gap-10">
+                            {People.map((value, index) => (
+                            <LinkedInCard
+                                key={index}
                                 index={index}
                                 name={value.name}
                                 image={value.image}
                                 linkedin_url={value.linkedin_url}
                                 role={value.role}
-                            />)}
-
+                                className="w-1/4 max-w-xs max-[500px]:w-full"  // Adjust width for responsiveness
+                            />
+                            ))}
                         </div>
+                                </div>
 
-                    </div>
 
-                    <Link onClick={()=>window.scrollTo(0,0)} to={'/about_us'} className={style.read_more_button}>Read more about us</Link>
+                    <Link onClick={()=>window.scrollTo(0,0)} to={'/about_us'} className={`${style.read_more_button} w-fit mt-10 mb-6 `}>Read more about us</Link>
                 </div>
 
 
@@ -302,7 +224,7 @@ export default function Main() {
 
             </div>
 
-            <div className={'w-full h-[300px] bg-[#DBCCF47D] flex flex-col items-center justify-center gap-8'}>
+            <div className={'w-full h-[300px] bg-[#DBCCF47D] flex flex-col items-center justify-center gap-8 mt-10 mb-6'}>
 
                 <div className={style.amazing}>Let’s make something amazing together.</div>
 

@@ -19,8 +19,8 @@ import sheba from "../../assets/img/logo/sheba.png";
 import map from "../../assets/img/layer/map_logo.png";
 import ReadMoreCard from "../../components/ReadMoreCard/ReadMoreCard";
 import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
-import PartnersSwiper from "../../components/PartnersSwiper/PartnersSwiper";
 import LinkedInCard from "../../components/LinkedInCard/LinkedInCard";
+import LinkedInLogo from "../../assets/img/logo/linkedin_logo.png";
 import {Link} from "react-router-dom";
 
 export default function Contact() {
@@ -58,7 +58,7 @@ export default function Contact() {
                 {/*Entrance Layer*/}
                 <div className={'w-full h-auto min-h-[600px] flex flex-row max-[1000px]:flex-col-reverse max-[1000px]:items-center items-center justify-center gap-8'}>
 
-                    <div className={'max-[1000px]:w-full w-1/2 h-auto flex flex-col max-[1000px]:items-center max-[1000px]:text-center items-start text-start '}>
+                    <div className={'max-[1000px]:w-full w-1/2 h-auto flex flex-col max-[1000px]:items-center max-[1000px]:text-center justify-center'}>
 
                         <span className={style.welcome}>Contact Us</span>
 
@@ -69,6 +69,13 @@ export default function Contact() {
                         <span className={style.description}>Email: labinnomind@gmail.com</span>
                         <br></br>
                         <span className={style.description}>Phone: +972 52-828-3227</span>
+                        
+                        <a href={"https://www.linkedin.com/company/innomind-lab"} className={'mt-4 items-center flex flex-col flex-row'} >
+                        <img className={'w-[30px] h-[30px] object-contain'} src={LinkedInLogo} alt={`innomind linkedin`}/>
+                        </a>
+                        <br></br>
+                   
+                      
                     </div>
 
                     <div className={' max-[1000px]:w-[250px] w-1/2 h-auto flex flex-col items-center justify-center'}>
